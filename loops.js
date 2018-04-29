@@ -21,9 +21,7 @@ function doWhileLoop(array) {
     return Math.random() >= 0.5
   }
   do {
-    console.log('running')
-  } while (maybeTrue() && array.length > 0) {
     array.shift()
-  }
+  } while (maybeTrue() && array.length > 0);
   return array
 }
